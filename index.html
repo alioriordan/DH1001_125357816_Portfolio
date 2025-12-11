@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Humanities Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1 {
+                font-family: "Montserrat", sans-serif;
+            }
+
+            img {
+                margin-bottom: -7px
+            }
+
+            .w3-row-padding img {
+                margin-bottom: 12px
+            }
+        </style>
+    </head>
+<body>
+ 
+
+    <!--Hero Section-->
+    <div class="hero">
+
+        <!--Text Overlay on Hero-->
+        <div class = "hero-text">
+            <h1><b>PORTFOLIO</b></h1>
+            <p><b>Alison O'Riordan, Digital Humanities Portfolio</b></p>
+        </div>
+    </div>
+<!--Hamburger menu button-->
+<button class = "menu-button" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+</button>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+     <a href="javascript:void(0)" onclick="w3_close()"
+         class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+    </a>
+<div class="w3-bar-block w3-center">
+    <a href = "anatomyofanaisystem.html.html" class = "w3-bar-item w3-button w3-text-grey w3-hover-black">Anatomy of an AI System</a> 
+    <a href="theinternetsownboy.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Then Internet's Own Boy</a>
+    <a href="acontractfortheweb.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Principles of the Web</a>
+    <a href= "operaccess.html" class = "w3-bar-item w3-button w3-text-grey w3-hover-black">Open Access</a> 
+    <a href= "biasarticle.html" class = "w3-bar-item w3-button w3-text-grey w3-hover-black"> Bias Article</a>
+    <a href= "immersivereality.html" class= "w3-bar-item w3-button w3-text-grey w3-hover-black"> Immersive Reality</a>
+    <a href= "internetofsounds.html" class= "w3-bar-item w3-button w3-text-grey w3-hover-black"> Internet of Sound</a>
+</div>
+</nav>
+
+<!--CSS-->
+<style>
+/*Hero container fills full screen*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('pexels-paduret-1476321.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    color: white; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 4em; 
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); 
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.my-button { 
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 3px; 
+    transition: 0.3s;
+}
+
+.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    font-size: 35px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2000;
+
+}
+
+.w3-animate-top {
+    animation-duration: 2s;
+
+}
+
+#mySidebar {
+    height: 100vh;
+    top: 0;
+    z-index: 3000;
+}
+.my-button:hover {
+    background-color: #333;
+}
+</style>
+
+<script>
+     // Toggle grid padding
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
